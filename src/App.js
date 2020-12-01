@@ -27,7 +27,7 @@ export default function App() {
           <TextField label="First Name" />
         </Grid>
         <Grid item xs="12">
-          <Tooltip title="This is how it works">
+          <Tooltip title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, nibh sed fermentum pellentesque, nulla sem dapibus lorem, eget fermentum dolor urna id felis.">
             <Typography variant="body2" align="center">
               Hover here!
             </Typography>

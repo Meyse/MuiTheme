@@ -61,10 +61,14 @@ theme.overrides = {
   },
   MuiTooltip: {
     tooltip: {
-      backgroundColor: "#000"
+      backgroundColor: "#fff",
+      padding: theme.spacing(1),
+      color: "#202020",
+      fontSize: "0.75rem",
+      boxShadow: "1px 1px 45px 0px rgba(0,0,0,0.21)"
     },
     arrow: {
-      color: "#000"
+      color: "#fff"
     }
   }
 };
