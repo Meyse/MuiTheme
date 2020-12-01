@@ -14,8 +14,8 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <Grid container spacing={6}>
         <Grid item xs="12">
-          <Button variant="contained" color="primary">
-            My Primary
+          <Button variant="contained" size="large" color="primary">
+            Start Conversion
           </Button>
         </Grid>
         <Grid item xs="12">

@@ -30,7 +30,7 @@ theme.props = {
 theme.overrides = {
   MuiButton: {
     root: {
-      borderRadius: 0,
+      borderRadius: 7,
       textTransform: "none"
     },
     containedPrimary: {
@@ -41,11 +41,15 @@ theme.overrides = {
     },
     containedSecondary: {
       fontWeight: 700
+    },
+    containedSizeLarge: {
+      fontSize: "18px",
+      fontWeight: "700"
     }
   },
   MuiInput: {
     root: {
-      top: theme.spacing(2),
+      top: theme.spacing(1),
       border: "1px solid #EFEFEF",
       padding: theme.spacing(1),
       "&$focused": {
