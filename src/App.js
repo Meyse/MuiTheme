@@ -1,11 +1,13 @@
 import React from "react";
-import "./styles.css";
+import { ThemeProvider, Button } from "@material-ui/core";
+import theme from "./theme";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Button variant="contained" color="primary">
+        Click Me!
+      </Button>
+    </ThemeProvider>
   );
 }
