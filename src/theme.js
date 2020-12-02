@@ -1,4 +1,5 @@
-import { createMuiTheme } from "@material-ui/core";
+import { createMuiTheme, ButtonBase } from "@material-ui/core";
+import { red, pink } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({
   palette: {
@@ -13,6 +14,7 @@ const theme = createMuiTheme({
 });
 
 theme.props = {
+  MuiButtonBase: {},
   MuiButton: {
     disableElevation: true,
     disableRipple: true,
@@ -31,11 +33,19 @@ theme.props = {
 
 theme.overrides = {
   MuiButton: {
+    focusVisible: {
+      outline: "2px solid #9CBCFF",
+      outlineOffset: "-4px"
+    },
     root: {
       borderRadius: 7,
-      textTransform: "none"
+      textTransform: "none",
+      transition: "all 0.05s"
     },
     containedPrimary: {
+      "&:active": {
+        backgroundColor: "#1949AE"
+      },
       "&:hover": {
         backgroundColor: "#265AC8",
         color: "#FFF"
@@ -43,11 +53,13 @@ theme.overrides = {
     },
     containedSecondary: {
       fontWeight: 700,
-      color: "#272727",
+      color: "#383838",
+      "&:active": {
+        color: "#000"
+      },
       "&:hover": {
         backgroundColor: "transparent",
-        underLine: true,
-        color: "#000"
+        color: "#2C2C2C"
       }
     },
     containedSizeLarge: {
@@ -79,14 +91,13 @@ theme.overrides = {
   },
   MuiTooltip: {
     tooltip: {
-      backgroundColor: "#fff",
+      backgroundColor: "#202020",
       padding: theme.spacing(1),
-      color: "#202020",
-      fontSize: "0.75rem",
-      boxShadow: "1px 1px 45px 0px rgba(0,0,0,0.21)"
+      color: "#fff",
+      fontSize: "0.75rem"
     },
     arrow: {
-      color: "#fff"
+      color: "#202020"
     }
   }
 };
