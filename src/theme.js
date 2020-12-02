@@ -14,7 +14,9 @@ const theme = createMuiTheme({
 
 theme.props = {
   MuiButton: {
-    disableElevation: true
+    disableElevation: true,
+    disableRipple: true,
+    disableFocusRipple: true
   },
   MuiInputLabel: {
     shrink: true
@@ -40,10 +42,22 @@ theme.overrides = {
       }
     },
     containedSecondary: {
-      fontWeight: 700
+      fontWeight: 700,
+      color: "#272727",
+      "&:hover": {
+        backgroundColor: "transparent",
+        underLine: true,
+        color: "#000"
+      }
     },
     containedSizeLarge: {
       fontSize: "18px",
+      fontWeight: "700"
+    },
+    containedSizeSmall: {
+      borderRadius: "5px",
+      fontSize: "14px",
+      padding: "5px 15px 5px 15px",
       fontWeight: "700"
     }
   },

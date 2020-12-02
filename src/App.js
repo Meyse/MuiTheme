@@ -19,6 +19,11 @@ export default function App() {
           </Button>
         </Grid>
         <Grid item xs="12">
+          <Button variant="contained" size="small" color="primary">
+            Create VerusID
+          </Button>
+        </Grid>
+        <Grid item xs="12">
           <Button variant="contained" color="secondary">
             My Secondary
           </Button>
