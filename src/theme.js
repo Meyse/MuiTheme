@@ -64,29 +64,40 @@ theme.overrides = {
     },
     containedSizeLarge: {
       fontSize: "18px",
-      fontWeight: "700"
+      fontWeight: "600",
+      paddingTop: "12px",
+      paddingBottom: "12px"
     },
     containedSizeSmall: {
       borderRadius: "5px",
       fontSize: "14px",
-      padding: "5px 15px 5px 15px",
+      padding: "5px 18px 5px 18px",
       fontWeight: "700"
     }
   },
   MuiInput: {
     root: {
       top: theme.spacing(1),
-      border: "1px solid #EFEFEF",
+      backgroundColor: "#EEEEEE",
+      border: "1px solid #9F9F9F",
+      borderRadius: 5,
       padding: theme.spacing(1),
       "&$focused": {
+        border: "1px solid #000",
+        backgroundColor: "#fff"
+      },
+      "&:hover": {
         border: "1px solid #000"
       }
     }
   },
   MuiInputLabel: {
     root: {
-      textTransform: "uppercase",
-      fontSize: "1rem"
+      fontSize: "1rem",
+      color: "#383838",
+      "&$focused": {
+        color: "#383838"
+      }
     }
   },
   MuiTooltip: {

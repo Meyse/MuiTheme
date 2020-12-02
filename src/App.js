@@ -16,7 +16,7 @@ export default function App() {
       <Grid container spacing={6}>
         <Grid item xs="12">
           <Button variant="contained" size="large" color="primary">
-            Start Conversion
+            Start conversion
           </Button>
         </Grid>
 
@@ -33,7 +33,11 @@ export default function App() {
         </Grid>
 
         <Grid item xs="12">
-          <TextField label="First Name" />
+          <TextField
+            label="Profile Name"
+            size="medium"
+            placeholder="Alex Jones"
+          />
         </Grid>
 
         <Grid item xs="12">
