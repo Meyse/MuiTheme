@@ -1,5 +1,4 @@
 import { createMuiTheme, ButtonBase } from "@material-ui/core";
-import { red, pink } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({
   palette: {
@@ -7,8 +6,8 @@ const theme = createMuiTheme({
       main: "#3165D4"
     },
     secondary: {
-      main: "#fff",
-      contrastText: "#272727"
+      main: "#D4313E",
+      contrastText: "#fff"
     }
   }
 });
@@ -51,15 +50,27 @@ theme.overrides = {
         color: "#FFF"
       }
     },
-    containedSecondary: {
+    textPrimary: {
       fontWeight: 700,
       color: "#383838",
       "&:active": {
         color: "#000"
       },
       "&:hover": {
-        backgroundColor: "transparent",
-        color: "#2C2C2C"
+        color: "#242424",
+        backgroundColor: "transparent"
+      }
+    },
+    containedSecondary: {
+      fontWeight: 700,
+      color: "#fff",
+      "&:active": {
+        color: "#fff",
+        backgroundColor: "#B71F2B"
+      },
+      "&:hover": {
+        backgroundColor: "#C52835",
+        color: "#fff"
       }
     },
     containedSizeLarge: {
@@ -73,10 +84,18 @@ theme.overrides = {
       fontSize: "14px",
       padding: "5px 18px 5px 18px",
       fontWeight: "700"
+    },
+    textSizeSmall: {
+      borderRadius: "5px",
+      fontSize: "14px",
+      padding: "5px 18px 5px 18px",
+      fontWeight: "700"
     }
   },
   MuiInput: {
     root: {
+      paddingLeft: "15px",
+      color: "#383838",
       top: theme.spacing(1),
       backgroundColor: "#EEEEEE",
       border: "1px solid #9F9F9F",

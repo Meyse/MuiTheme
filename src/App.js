@@ -3,6 +3,11 @@ import {
   ThemeProvider,
   Button,
   TextField,
+  Select,
+  FormControl,
+  FormHelperText,
+  MenuItem,
+  InputLabel,
   Grid,
   Tooltip,
   Typography
@@ -27,8 +32,14 @@ export default function App() {
         </Grid>
 
         <Grid item xs="12">
-          <Button variant="contained" size="small" color="secondary">
+          <Button variant="text" size="small" color="primary">
             Recover VerusID
+          </Button>
+        </Grid>
+
+        <Grid item xs="12">
+          <Button variant="contained" size="small" color="secondary">
+            Deactivate coin
           </Button>
         </Grid>
 
@@ -36,8 +47,12 @@ export default function App() {
           <TextField
             label="Profile Name"
             size="medium"
-            placeholder="Alex Jones"
+            placeholder="John Doe's Wallet"
           />
+        </Grid>
+
+        <Grid item xs="12">
+          <TextField size="small" placeholder="John Doe's Wallet" />
         </Grid>
 
         <Grid item xs="12">
