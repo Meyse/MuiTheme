@@ -19,9 +19,15 @@ const theme = createMuiTheme({
     },
     body1: {
       fontFamily: "Source Sans Pro, sans-serif",
-      fontsize: "1rem",
+      fontSize: "1rem",
       fontWeight: "400",
       lineHeight: "1.5rem"
+    },
+    subtitle1: {
+      fontFamily: "Source Sans Pro, sans-serif",
+      fontSize: "0.88rem",
+      fontWeight: "400",
+      lineHeight: "1.3rem"
     }
   }
 });
@@ -149,6 +155,13 @@ theme.overrides = {
       h1: {
         fontSize: "24px",
         color: "#fff"
+      }
+    }
+  },
+  MuiLink: {
+    underlineAlways: {
+      "&:hover": {
+        opacity: "0.8"
       }
     }
   }

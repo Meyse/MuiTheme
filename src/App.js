@@ -6,7 +6,10 @@ import {
   Grid,
   Tooltip,
   Typography,
-  Container
+  Container,
+  Link,
+  Zoom,
+  Fade
 } from "@material-ui/core";
 
 import theme from "./theme";
@@ -61,7 +64,10 @@ export default function App() {
         </Grid>
 
         <Grid item xs="12">
-          <Tooltip title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, nibh sed fermentum pellentesque, nulla sem dapibus lorem, eget fermentum dolor urna id felis.">
+          <Tooltip
+            TransitionComponent={Zoom}
+            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, nibh sed fermentum pellentesque, nulla sem dapibus lorem, eget fermentum dolor urna id felis."
+          >
             <Typography variant="body2" align="center">
               Hover here!
             </Typography>
@@ -100,6 +106,76 @@ export default function App() {
               }}
             >
               Discover and enjoy what Verus and its ecosystem has to offer.
+            </Typography>
+          </Typography>
+        </Container>
+
+        <Container fixed>
+          <Typography
+            component="div"
+            style={{
+              backgroundColor: "#fff",
+              border: "1px solid #272727",
+              height: "400px",
+              width: "400px",
+              padding: "60px",
+              marginTop: "100px",
+              borderRadius: 10
+            }}
+          >
+            <Typography
+              variant="h1"
+              style={{
+                color: "#272727",
+                maxWidth: "300px"
+              }}
+            >
+              Login to my profile
+            </Typography>
+            <Grid item xs="12">
+              <TextField size="small" placeholder="John Doe's Wallet" />
+            </Grid>
+            <Button
+              variant="contained"
+              size="large"
+              color="primary"
+              style={{ width: "350px", align: "center" }}
+            >
+              Login to profile
+            </Button>
+            <Typography
+              variant="body1"
+              style={{
+                color: "#000",
+                opacity: "0.83",
+                paddingLeft: "40px",
+                paddingTop: "20px",
+                maxWidth: "250px"
+              }}
+            >
+              No profile yet?{" "}
+              <Link href="#" underline="always" color="inherit">
+                Create one here
+              </Link>
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              style={{
+                color: "#000",
+                opacity: "0.83",
+                paddingLeft: "40px",
+                paddingTop: "90px",
+                maxWidth: "250px"
+              }}
+            >
+              Need help? Go to{" "}
+              <Link href="#" underline="always" color="inherit">
+                support Wiki
+              </Link>{" "}
+              or interact with our community on{" "}
+              <Link href="#" underline="always" color="inherit">
+                Discord
+              </Link>
             </Typography>
           </Typography>
         </Container>
