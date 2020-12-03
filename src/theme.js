@@ -39,7 +39,8 @@ theme.overrides = {
     root: {
       borderRadius: 7,
       textTransform: "none",
-      transition: "all 0.05s"
+      transition: "all 0.05s",
+      fontWeight: 700
     },
     containedPrimary: {
       "&:active": {
@@ -51,7 +52,6 @@ theme.overrides = {
       }
     },
     textPrimary: {
-      fontWeight: 700,
       color: "#383838",
       "&:active": {
         color: "#000"
@@ -62,7 +62,6 @@ theme.overrides = {
       }
     },
     containedSecondary: {
-      fontWeight: 700,
       color: "#fff",
       "&:active": {
         color: "#fff",
@@ -82,14 +81,12 @@ theme.overrides = {
     containedSizeSmall: {
       borderRadius: "5px",
       fontSize: "14px",
-      padding: "5px 18px 5px 18px",
-      fontWeight: "700"
+      padding: "5px 18px 5px 18px"
     },
     textSizeSmall: {
       borderRadius: "5px",
       fontSize: "14px",
-      padding: "5px 18px 5px 18px",
-      fontWeight: "700"
+      padding: "5px 18px 5px 18px"
     }
   },
   MuiInput: {

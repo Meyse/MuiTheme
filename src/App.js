@@ -3,14 +3,10 @@ import {
   ThemeProvider,
   Button,
   TextField,
-  Select,
-  FormControl,
-  FormHelperText,
-  MenuItem,
-  InputLabel,
   Grid,
   Tooltip,
-  Typography
+  Typography,
+  Container
 } from "@material-ui/core";
 
 import theme from "./theme";
@@ -62,6 +58,13 @@ export default function App() {
             </Typography>
           </Tooltip>
         </Grid>
+
+        <Container fixed>
+          <Typography
+            component="div"
+            style={{ backgroundColor: "#3165D4", height: "200px" }}
+          />
+        </Container>
       </Grid>
     </ThemeProvider>
   );
