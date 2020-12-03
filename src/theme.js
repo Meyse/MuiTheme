@@ -9,6 +9,20 @@ const theme = createMuiTheme({
       main: "#D4313E",
       contrastText: "#fff"
     }
+  },
+  typography: {
+    h1: {
+      fontFamily: "Source Sans Pro, sans-serif",
+      fontSize: "1.5rem",
+      fontWeight: "600",
+      lineHeight: "2rem"
+    },
+    body1: {
+      fontFamily: "Source Sans Pro, sans-serif",
+      fontsize: "1rem",
+      fontWeight: "400",
+      lineHeight: "1.5rem"
+    }
   }
 });
 
@@ -37,14 +51,16 @@ theme.overrides = {
       outlineOffset: "-4px"
     },
     root: {
+      fontFamily: "Source Sans Pro, sans-serif",
       borderRadius: 7,
       textTransform: "none",
       transition: "all 0.05s",
-      fontWeight: 700
+      fontWeight: 600
     },
     containedPrimary: {
       "&:active": {
-        backgroundColor: "#1949AE"
+        backgroundColor: "#1949AE",
+        transform: "translateY(1px)"
       },
       "&:hover": {
         backgroundColor: "#265AC8",
@@ -52,12 +68,13 @@ theme.overrides = {
       }
     },
     textPrimary: {
-      color: "#383838",
+      color: "#272727",
       "&:active": {
-        color: "#000"
+        color: "#000",
+        transform: "translateY(1px)"
       },
       "&:hover": {
-        color: "#242424",
+        color: "#171717",
         backgroundColor: "transparent"
       }
     },
@@ -65,7 +82,8 @@ theme.overrides = {
       color: "#fff",
       "&:active": {
         color: "#fff",
-        backgroundColor: "#B71F2B"
+        backgroundColor: "#B71F2B",
+        transform: "translateY(1px)"
       },
       "&:hover": {
         backgroundColor: "#C52835",
@@ -74,7 +92,6 @@ theme.overrides = {
     },
     containedSizeLarge: {
       fontSize: "18px",
-      fontWeight: "600",
       paddingTop: "12px",
       paddingBottom: "12px"
     },
@@ -125,6 +142,14 @@ theme.overrides = {
     },
     arrow: {
       color: "#202020"
+    }
+  },
+  Typography: {
+    MuiTypography: {
+      h1: {
+        fontSize: "24px",
+        color: "#fff"
+      }
     }
   }
 };
